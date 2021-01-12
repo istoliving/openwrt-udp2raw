@@ -49,7 +49,7 @@ endef
 
 define Package/udp2raw-tunnel/install
 	$(INSTALL_DIR) $(1)/usr/bin
-	$(INSTALL_BIN) $(PKG_BUILD_DIR)/udp2raw_cross $(1)/usr/bin/udp2raw
+	$(INSTALL_BIN) $(PKG_BUILD_DIR)/udp2raw_amd64 $(1)/usr/bin/udp2raw
 endef
 
 $(eval $(call BuildPackage,udp2raw-tunnel))
